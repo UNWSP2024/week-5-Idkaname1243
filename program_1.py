@@ -5,22 +5,20 @@
 # The conversion must be done as a function with input and output.
 
 
-def kilometer_conversion(kilometers):    
+def kilometer_conversion(kilometers):
     miles = 0.0
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################    
+    miles = kilometers * 0.6214
+    miles = str(miles)
+    print("your distance in miles is "+ miles)
 
-
-    # Return the variable to the calling function
     return miles
-
+kilometers = int(input("enter distance in kilometers:   "))
+kilometer_conversion(kilometers)
 #### This piece of the code has been done for you,
 #### you only need to worry about the actual temp 
 #### conversion logic in the temp_conversion function
-if __name__ == '__main__':
+#if __name__ == '__main__':
     # Get User Input
-    print('in main')
+    #print('in main')
     # Call kilometer_conversion
-    
     # Display the miles
